@@ -1,3 +1,3 @@
 public interface Validation {
-    public boolean isInputValueIsDigit(String value);
+//    public boolean isInputValueIsDigit(String value);
 }

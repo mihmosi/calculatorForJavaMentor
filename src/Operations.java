@@ -1,11 +1,10 @@
 import java.util.Arrays;
 
-public class Operations implements Validation{
+public class Operations {
 
     public static String[] operations = {"+","-","*","/"};
 
-    @Override
-    public boolean isInputValueIsDigit(String value) {
+    public static boolean isInputValueIsSign(String value) {
         return Arrays.asList(operations).contains(value);
     }
 }
