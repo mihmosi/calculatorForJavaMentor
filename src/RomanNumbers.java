@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class RomanNumbers extends ArabicNumbers{
+public class RomanNumbers extends ArabicNumbers {
     static String[] romanNums = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
     static String[] romanNumDec = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
     static int lenNums = romanNums.length;
@@ -34,13 +34,13 @@ public class RomanNumbers extends ArabicNumbers{
         return result;
     }
 
-    public  static int findIndex(String[] list, String value){
-        int len = list.length;
-        int index = 0;
-        for (int i = 0;i < len;i++){
-            if (list[i].equals(value))
-                index = i;
-        }
-        return index;
-    }
+//    public  static int findIndex(String[] list, String value){
+//        int len = list.length;
+//        int index = 0;
+//        for (int i = 0;i < len;i++){
+//            if (list[i].equals(value))
+//                index = i;
+//        }
+//        return index;
+//    }
 }
