@@ -19,8 +19,14 @@ public class RomanNumbers extends ArabicNumbers {
                 else romanNumsAll[j * 10 + i] = romanNumDec[j] + romanNums[i];
             }
         }
-        String val1ToArabic = Integer.toString(Arrays.binarySearch(romanNums, value1) + 1);
-        String val2ToArabic = Integer.toString(Arrays.binarySearch(romanNums, value2) + 1);
+        String val1ToArabic = "";
+        if (Integer.toString(Arrays.binarySearch(romanNums, value1) + 1).equals("-4")) {
+            val1ToArabic = "9";
+        } else val1ToArabic = Integer.toString(Arrays.binarySearch(romanNums, value1) + 1);
+        String val2ToArabic = "";
+        if (Integer.toString(Arrays.binarySearch(romanNums, value2) + 1).equals("-4")) {
+            val2ToArabic = "9";
+        } else val2ToArabic = Integer.toString(Arrays.binarySearch(romanNums, value2) + 1);
 
         int resArabic = ArabicNumbers.calculateArabicNumbers(val1ToArabic, val2ToArabic, operator);
 
